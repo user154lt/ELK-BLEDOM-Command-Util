@@ -18,10 +18,17 @@ you will have to adjust the values accordingly.
 So far these are the commands I have working:
 
 Turn On/Off
+
 Set color
+
 Set brightness
+
 Set pattern
+
 Set pattern speed
+
 Set internal time/day of the week
+
 Set scheduled on/off time
+
 Clear scheduled on/off time
