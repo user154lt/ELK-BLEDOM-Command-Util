@@ -1,5 +1,6 @@
 # ELK-BLEDOM-Command-Util
-A simple class written in kotlin to create command data for led strip lights that present themselves as ELK-BLEDOM
+A simple class written in kotlin to create command data for led strip 
+lights that present themselves as ELK-BLEDOM
 
 This repository contains all the data for issuing commands to
 these light strips that I have managed to find so far and may
@@ -13,3 +14,14 @@ Each command is 9 bytes in size. In the example given each byte in the array
 is assigned as an integer value. Please note as this is kotlin bytes are
 signed so if you intend to use the data in a project using unsigned bytes 
 you will have to adjust the values accordingly.
+
+So far these are the commands I have working:
+
+Turn On/Off
+Set color
+Set brightness
+Set pattern
+Set pattern speed
+Set internal time/day of the week
+Set scheduled on/off time
+Clear scheduled on/off time
