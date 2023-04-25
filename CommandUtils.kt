@@ -122,7 +122,7 @@ class CommandUtils {
     or a time to turn off. This is written below but I will say it here as well, this value is the opposite
     of what you would expect 0 is for an ON time, 1 is for an OFF time. The days of the week you wish to
     schedule for are passed as a list of Booleans where weekdays[0] represents Monday and weekdays[6]
-    represents Sunday. Please the function createWeekdaysInt below to see how this List is transformed
+    represents Sunday. Please see the function createWeekdaysInt below to see how this List is transformed
     into an Int that is used to create commandData[7], the byte that defines what weekdays are set or cleared.
     We then perform a bitwise comparison on weekdaysInt. If we are setting on/off times we do
     weekdaysInt OR 128, if we are clearing on/off times we do weekdaysInt OR 0.
