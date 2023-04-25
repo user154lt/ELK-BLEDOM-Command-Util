@@ -32,3 +32,8 @@ Set internal time/day of the week
 Set scheduled on/off time
 
 Clear scheduled on/off time
+
+
+The service used is: 0000fff0-0000-1000-8000-00805f9b34fb
+
+The characteristic used is: 0000fff3-0000-1000-8000-00805f9b34fb
