@@ -2,6 +2,9 @@
 A simple class written in kotlin to create command data for led strip 
 lights that present themselves as ELK-BLEDOM
 
+If your lights work with the app "Lotus Lantern" then this data will
+work for your lights.
+
 This repository contains all the data for issuing commands to
 these light strips that I have managed to find so far and may
 be updated as and when I find new data.
