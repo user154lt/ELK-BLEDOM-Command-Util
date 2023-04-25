@@ -1,5 +1,3 @@
-package com.leet.elkotrol.bluetooth
-
 import java.util.*
 
 class CommandUtils {

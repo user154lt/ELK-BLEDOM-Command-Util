@@ -1,6 +1,3 @@
-package com.leet.elkotrol.data
-
-
 
 class PatternData(){
     val pattern: List<String> = listOf(
