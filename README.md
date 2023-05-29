@@ -30,6 +30,10 @@ Set pattern
 
 Set pattern speed
 
+Set mic on/off
+
+Set mic eq
+
 Set internal time/day of the week
 
 Set scheduled on/off time
