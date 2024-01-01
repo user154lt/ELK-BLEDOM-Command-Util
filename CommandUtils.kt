@@ -222,16 +222,19 @@ class CommandUtils {
         return weekdaysInt
     }
 
-    /* Going to leave this commented out until I have tested fully. This should be the data required to change rgb order of the
-    wires, not really for general use but potentially useful if reusing a controller with a different light strip. The 
-    integer passed for each wire represents the new colour you would like the wire to be, and should be either 1,2, or 3.
-    Where 1 = Red, 2 = Green, 3 = Blue. The wire numbering is as follows, with the 5/12/24v wire on the left:
+    /* This should be the data required to change rgb order of the wires, not really for general use but potentially 
+    useful if reusing a controller with a different light strip. The integer passed for each wire represents the new 
+    colour you would like the wire to be, and should be either 1,2, or 3. Where 1 = Red, 2 = Green, 3 = Blue.
+    
+    The wire numbering is as follows, with the 5/12/24v wire on the left:
 
             |   |   |   |
             |   |   |   |
             |   |   |   |
             v+ 1st 2nd 3rd 
 
+    After using this command you must turn the controller off and back on again for changes to take effect.
+    */
     fun createOrderChangeCommand(firstWire: Int, secondWire: Int, thirdWire: Int){
         val commandData = ByteArray(9)
         commandData[0] = 126
@@ -244,6 +247,4 @@ class CommandUtils {
         commandData[7] = 0
         commandData[8] = -17
     }
-
-    */
 }
