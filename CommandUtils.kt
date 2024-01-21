@@ -215,8 +215,8 @@ class CommandUtils {
         var weekdaysInt = 0
         for (i in 0..6){
             if (weekdays[i]){
-                val flag: Int = 1 shl i
-                weekdaysInt = weekdaysInt or flag
+                val mask: Int = 1 shl i
+                weekdaysInt = weekdaysInt or mask
             }
         }
         return weekdaysInt
@@ -235,7 +235,11 @@ class CommandUtils {
 
     After using this command you must turn the controller off and back on again for changes to take effect.
     */
-    fun createOrderChangeCommand(firstWire: Int, secondWire: Int, thirdWire: Int){
+    fun createOrderChangeCommand(
+            firstWire: Int,
+            secondWire: Int,
+            thirdWire: Int
+    ): ByteArray{
         val commandData = ByteArray(9)
         commandData[0] = 126
         commandData[1] = 6
@@ -246,5 +250,6 @@ class CommandUtils {
         commandData[6] = -1
         commandData[7] = 0
         commandData[8] = -17
+        return commandData
     }
 }
