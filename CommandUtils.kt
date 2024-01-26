@@ -47,7 +47,7 @@ class CommandUtils {
         0x05.toByte(),
         0x03.toByte(),
         (pattern.coerceIn(0..28) + 128).toByte(),
-        0x03,
+        0x03.toByte(),
         0xFF.toByte(),
         0xFF.toByte(),
         0x00.toByte(),
